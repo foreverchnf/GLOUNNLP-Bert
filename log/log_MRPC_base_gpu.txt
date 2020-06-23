@@ -1,0 +1,111 @@
+INFO:root:02:41:36 Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', calib_mode='customize', deploy=False, dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=0, log_interval=10, lr=2e-05, max_len=128, model_parameters=None, model_prefix=None, num_calib_batches=5, only_calibration=False, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, quantized_dtype='auto', round_to=None, seed=27, task_name='MRPC', training_steps=None, warmup_ratio=0.1)
+INFO:root:02:41:41 processing dataset...
+INFO:root:02:41:44 Now we are doing BERT classification training on gpu(0)!
+INFO:root:02:41:44 training steps=573
+INFO:root:02:41:47 [Epoch 1 Batch 10/119] loss=0.6130, lr=0.0000032, metrics:accuracy:0.7125,f1:0.8321
+INFO:root:02:41:48 [Epoch 1 Batch 20/119] loss=0.6304, lr=0.0000067, metrics:accuracy:0.6891,f1:0.8145
+INFO:root:02:41:50 [Epoch 1 Batch 30/119] loss=0.5739, lr=0.0000102, metrics:accuracy:0.7000,f1:0.8209
+INFO:root:02:41:52 [Epoch 1 Batch 40/119] loss=0.6509, lr=0.0000137, metrics:accuracy:0.6938,f1:0.8084
+INFO:root:02:41:54 [Epoch 1 Batch 50/119] loss=0.6401, lr=0.0000172, metrics:accuracy:0.6817,f1:0.7896
+INFO:root:02:41:56 [Epoch 1 Batch 60/119] loss=0.5850, lr=0.0000199, metrics:accuracy:0.6897,f1:0.7956
+INFO:root:02:41:57 [Epoch 1 Batch 70/119] loss=0.5460, lr=0.0000195, metrics:accuracy:0.6959,f1:0.7978
+INFO:root:02:41:59 [Epoch 1 Batch 80/119] loss=0.5326, lr=0.0000191, metrics:accuracy:0.7009,f1:0.7998
+INFO:root:02:42:01 [Epoch 1 Batch 90/119] loss=0.5161, lr=0.0000188, metrics:accuracy:0.7084,f1:0.8040
+INFO:root:02:42:03 [Epoch 1 Batch 100/119] loss=0.5474, lr=0.0000184, metrics:accuracy:0.7082,f1:0.8008
+INFO:root:02:42:05 [Epoch 1 Batch 110/119] loss=0.4613, lr=0.0000180, metrics:accuracy:0.7160,f1:0.8065
+INFO:root:02:42:07 Now we are doing evaluation on dev with gpu(0).
+INFO:root:02:42:07 [Batch 10/51] loss=0.3699, metrics:accuracy:0.8375,f1:0.8943
+INFO:root:02:42:07 [Batch 20/51] loss=0.5073, metrics:accuracy:0.8125,f1:0.8790
+INFO:root:02:42:08 [Batch 30/51] loss=0.4573, metrics:accuracy:0.8000,f1:0.8717
+INFO:root:02:42:08 [Batch 40/51] loss=0.4967, metrics:accuracy:0.7875,f1:0.8635
+INFO:root:02:42:08 [Batch 50/51] loss=0.5448, metrics:accuracy:0.7775,f1:0.8576
+INFO:root:02:42:08 validation metrics:accuracy:0.7819,f1:0.8598
+INFO:root:02:42:08 Time cost=1.42s, throughput=288.06 samples/s
+INFO:root:02:42:10 params saved in: ./output_dir/model_bert_MRPC_0.params
+INFO:root:02:42:10 Time cost=25.92s
+INFO:root:02:42:12 [Epoch 2 Batch 10/119] loss=0.3622, lr=0.0000172, metrics:accuracy:0.8531,f1:0.8840
+INFO:root:02:42:14 [Epoch 2 Batch 20/119] loss=0.3377, lr=0.0000169, metrics:accuracy:0.8516,f1:0.8884
+INFO:root:02:42:16 [Epoch 2 Batch 30/119] loss=0.3155, lr=0.0000165, metrics:accuracy:0.8544,f1:0.8915
+INFO:root:02:42:18 [Epoch 2 Batch 40/119] loss=0.3535, lr=0.0000161, metrics:accuracy:0.8517,f1:0.8899
+INFO:root:02:42:20 [Epoch 2 Batch 50/119] loss=0.3264, lr=0.0000157, metrics:accuracy:0.8545,f1:0.8906
+INFO:root:02:42:21 [Epoch 2 Batch 60/119] loss=0.2645, lr=0.0000153, metrics:accuracy:0.8627,f1:0.8990
+INFO:root:02:42:23 [Epoch 2 Batch 70/119] loss=0.2897, lr=0.0000149, metrics:accuracy:0.8653,f1:0.9009
+INFO:root:02:42:25 [Epoch 2 Batch 80/119] loss=0.2377, lr=0.0000145, metrics:accuracy:0.8687,f1:0.9037
+INFO:root:02:42:27 [Epoch 2 Batch 90/119] loss=0.2362, lr=0.0000141, metrics:accuracy:0.8716,f1:0.9061
+INFO:root:02:42:29 [Epoch 2 Batch 100/119] loss=0.2323, lr=0.0000138, metrics:accuracy:0.8752,f1:0.9090
+INFO:root:02:42:31 [Epoch 2 Batch 110/119] loss=0.2706, lr=0.0000134, metrics:accuracy:0.8769,f1:0.9097
+INFO:root:02:42:32 Now we are doing evaluation on dev with gpu(0).
+INFO:root:02:42:33 [Batch 10/51] loss=0.3274, metrics:accuracy:0.8500,f1:0.8929
+INFO:root:02:42:33 [Batch 20/51] loss=0.2914, metrics:accuracy:0.8562,f1:0.8969
+INFO:root:02:42:33 [Batch 30/51] loss=0.4030, metrics:accuracy:0.8458,f1:0.8896
+INFO:root:02:42:34 [Batch 40/51] loss=0.4033, metrics:accuracy:0.8469,f1:0.8894
+INFO:root:02:42:34 [Batch 50/51] loss=0.3350, metrics:accuracy:0.8450,f1:0.8885
+INFO:root:02:42:34 validation metrics:accuracy:0.8456,f1:0.8885
+INFO:root:02:42:34 Time cost=1.39s, throughput=293.14 samples/s
+INFO:root:02:42:35 params saved in: ./output_dir/model_bert_MRPC_1.params
+INFO:root:02:42:35 Time cost=25.51s
+INFO:root:02:42:37 [Epoch 3 Batch 10/119] loss=0.1333, lr=0.0000126, metrics:accuracy:0.9610,f1:0.9724
+INFO:root:02:42:39 [Epoch 3 Batch 20/119] loss=0.1461, lr=0.0000122, metrics:accuracy:0.9602,f1:0.9715
+INFO:root:02:42:41 [Epoch 3 Batch 30/119] loss=0.1048, lr=0.0000119, metrics:accuracy:0.9596,f1:0.9710
+INFO:root:02:42:43 [Epoch 3 Batch 40/119] loss=0.0880, lr=0.0000115, metrics:accuracy:0.9634,f1:0.9735
+INFO:root:02:42:45 [Epoch 3 Batch 50/119] loss=0.0642, lr=0.0000111, metrics:accuracy:0.9665,f1:0.9756
+INFO:root:02:42:47 [Epoch 3 Batch 60/119] loss=0.0533, lr=0.0000107, metrics:accuracy:0.9702,f1:0.9783
+INFO:root:02:42:49 [Epoch 3 Batch 70/119] loss=0.1194, lr=0.0000103, metrics:accuracy:0.9695,f1:0.9777
+INFO:root:02:42:51 [Epoch 3 Batch 80/119] loss=0.1425, lr=0.0000099, metrics:accuracy:0.9682,f1:0.9765
+INFO:root:02:42:52 [Epoch 3 Batch 90/119] loss=0.1060, lr=0.0000095, metrics:accuracy:0.9687,f1:0.9769
+INFO:root:02:42:54 [Epoch 3 Batch 100/119] loss=0.0843, lr=0.0000091, metrics:accuracy:0.9690,f1:0.9771
+INFO:root:02:42:56 [Epoch 3 Batch 110/119] loss=0.0922, lr=0.0000088, metrics:accuracy:0.9693,f1:0.9774
+INFO:root:02:42:58 Now we are doing evaluation on dev with gpu(0).
+INFO:root:02:42:58 [Batch 10/51] loss=0.4629, metrics:accuracy:0.8625,f1:0.9091
+INFO:root:02:42:58 [Batch 20/51] loss=0.6103, metrics:accuracy:0.8562,f1:0.9030
+INFO:root:02:42:59 [Batch 30/51] loss=0.6263, metrics:accuracy:0.8583,f1:0.9050
+INFO:root:02:42:59 [Batch 40/51] loss=0.6268, metrics:accuracy:0.8562,f1:0.9013
+INFO:root:02:42:59 [Batch 50/51] loss=0.8477, metrics:accuracy:0.8450,f1:0.8938
+INFO:root:02:42:59 validation metrics:accuracy:0.8480,f1:0.8956
+INFO:root:02:42:59 Time cost=1.39s, throughput=294.16 samples/s
+INFO:root:02:43:01 params saved in: ./output_dir/model_bert_MRPC_2.params
+INFO:root:02:43:01 Time cost=25.30s
+INFO:root:02:43:03 [Epoch 4 Batch 10/119] loss=0.0532, lr=0.0000080, metrics:accuracy:0.9870,f1:0.9900
+INFO:root:02:43:05 [Epoch 4 Batch 20/119] loss=0.0427, lr=0.0000076, metrics:accuracy:0.9873,f1:0.9908
+INFO:root:02:43:06 [Epoch 4 Batch 30/119] loss=0.0449, lr=0.0000072, metrics:accuracy:0.9880,f1:0.9914
+INFO:root:02:43:08 [Epoch 4 Batch 40/119] loss=0.0916, lr=0.0000069, metrics:accuracy:0.9842,f1:0.9884
+INFO:root:02:43:10 [Epoch 4 Batch 50/119] loss=0.0287, lr=0.0000065, metrics:accuracy:0.9862,f1:0.9900
+INFO:root:02:43:12 [Epoch 4 Batch 60/119] loss=0.0609, lr=0.0000061, metrics:accuracy:0.9859,f1:0.9897
+INFO:root:02:43:14 [Epoch 4 Batch 70/119] loss=0.0598, lr=0.0000057, metrics:accuracy:0.9857,f1:0.9897
+INFO:root:02:43:16 [Epoch 4 Batch 80/119] loss=0.0499, lr=0.0000053, metrics:accuracy:0.9859,f1:0.9898
+INFO:root:02:43:18 [Epoch 4 Batch 90/119] loss=0.0415, lr=0.0000049, metrics:accuracy:0.9860,f1:0.9898
+INFO:root:02:43:20 [Epoch 4 Batch 100/119] loss=0.0255, lr=0.0000045, metrics:accuracy:0.9871,f1:0.9906
+INFO:root:02:43:21 [Epoch 4 Batch 110/119] loss=0.0122, lr=0.0000041, metrics:accuracy:0.9880,f1:0.9912
+INFO:root:02:43:23 Now we are doing evaluation on dev with gpu(0).
+INFO:root:02:43:23 [Batch 10/51] loss=0.4861, metrics:accuracy:0.8750,f1:0.9107
+INFO:root:02:43:24 [Batch 20/51] loss=0.6438, metrics:accuracy:0.8562,f1:0.8978
+INFO:root:02:43:24 [Batch 30/51] loss=0.7886, metrics:accuracy:0.8458,f1:0.8909
+INFO:root:02:43:24 [Batch 40/51] loss=0.7057, metrics:accuracy:0.8438,f1:0.8874
+INFO:root:02:43:24 [Batch 50/51] loss=0.6376, metrics:accuracy:0.8525,f1:0.8937
+INFO:root:02:43:24 validation metrics:accuracy:0.8554,f1:0.8956
+INFO:root:02:43:24 Time cost=1.39s, throughput=292.84 samples/s
+INFO:root:02:43:26 params saved in: ./output_dir/model_bert_MRPC_3.params
+INFO:root:02:43:26 Time cost=25.38s
+INFO:root:02:43:28 [Epoch 5 Batch 10/119] loss=0.0186, lr=0.0000034, metrics:accuracy:0.9938,f1:0.9950
+INFO:root:02:43:30 [Epoch 5 Batch 20/119] loss=0.0222, lr=0.0000030, metrics:accuracy:0.9938,f1:0.9951
+INFO:root:02:43:32 [Epoch 5 Batch 30/119] loss=0.0392, lr=0.0000026, metrics:accuracy:0.9917,f1:0.9936
+INFO:root:02:43:34 [Epoch 5 Batch 40/119] loss=0.0389, lr=0.0000022, metrics:accuracy:0.9913,f1:0.9934
+INFO:root:02:43:36 [Epoch 5 Batch 50/119] loss=0.0409, lr=0.0000019, metrics:accuracy:0.9911,f1:0.9933
+INFO:root:02:43:38 [Epoch 5 Batch 60/119] loss=0.0473, lr=0.0000015, metrics:accuracy:0.9910,f1:0.9933
+INFO:root:02:43:40 [Epoch 5 Batch 70/119] loss=0.0198, lr=0.0000011, metrics:accuracy:0.9914,f1:0.9936
+INFO:root:02:43:41 [Epoch 5 Batch 80/119] loss=0.0070, lr=0.0000007, metrics:accuracy:0.9923,f1:0.9942
+INFO:root:02:43:43 [Epoch 5 Batch 90/119] loss=0.0247, lr=0.0000003, metrics:accuracy:0.9927,f1:0.9945
+INFO:root:02:43:44 Finish training step: 573
+INFO:root:02:43:44 Now we are doing evaluation on dev with gpu(0).
+INFO:root:02:43:45 [Batch 10/51] loss=0.4847, metrics:accuracy:0.8750,f1:0.9123
+INFO:root:02:43:45 [Batch 20/51] loss=0.6657, metrics:accuracy:0.8688,f1:0.9091
+INFO:root:02:43:45 [Batch 30/51] loss=0.8566, metrics:accuracy:0.8500,f1:0.8960
+INFO:root:02:43:45 [Batch 40/51] loss=0.7003, metrics:accuracy:0.8500,f1:0.8943
+INFO:root:02:43:46 [Batch 50/51] loss=0.6984, metrics:accuracy:0.8525,f1:0.8959
+INFO:root:02:43:46 validation metrics:accuracy:0.8554,f1:0.8977
+INFO:root:02:43:46 Time cost=1.38s, throughput=295.72 samples/s
+INFO:root:02:43:47 params saved in: ./output_dir/model_bert_MRPC_4.params
+INFO:root:02:43:47 Time cost=21.11s
+INFO:root:02:43:48 Best model at epoch 3. Validation metrics:accuracy:0.8554,f1:0.8956
+INFO:root:02:43:48 Now we are doing testing on test with gpu(0).
+INFO:root:02:43:54 Time cost=5.66s, throughput=305.43 samples/s

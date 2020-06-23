@@ -1,0 +1,62 @@
+INFO:root:08:10:47 Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_cased', bert_model='bert_12_768_12', calib_mode='customize', deploy=False, dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=0, log_interval=400, lr=2e-05, max_len=128, model_parameters=None, model_prefix=None, num_calib_batches=5, only_calibration=False, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, quantized_dtype='auto', round_to=None, seed=2, task_name='SST', training_steps=None, warmup_ratio=0.1)
+INFO:root:08:10:47 Model file not found. Downloading to /root/.mxnet/models/bert_12_768_12_book_corpus_wiki_en_cased-5656dac6.params.
+INFO:root:08:11:26 Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_cased', bert_model='bert_24_1024_16', calib_mode='customize', deploy=False, dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=0, log_interval=400, lr=2e-05, max_len=128, model_parameters=None, model_prefix=None, num_calib_batches=5, only_calibration=False, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, quantized_dtype='auto', round_to=None, seed=2, task_name='SST', training_steps=None, warmup_ratio=0.1)
+INFO:root:08:11:26 Model file not found. Downloading to /root/.mxnet/models/bert_24_1024_16_book_corpus_wiki_en_cased-4e685a96.params.
+INFO:root:08:12:23 processing dataset...
+INFO:root:08:12:29 Now we are doing BERT classification training on gpu(0)!
+INFO:root:08:12:29 training steps=10523
+INFO:root:08:14:06 [Epoch 1 Batch 400/2111] loss=0.3864, lr=0.0000076, metrics:accuracy:0.8076
+INFO:root:08:15:44 [Epoch 1 Batch 800/2111] loss=0.2213, lr=0.0000152, metrics:accuracy:0.8627
+INFO:root:08:17:21 [Epoch 1 Batch 1200/2111] loss=0.2038, lr=0.0000197, metrics:accuracy:0.8845
+INFO:root:08:19:00 [Epoch 1 Batch 1600/2111] loss=0.1853, lr=0.0000188, metrics:accuracy:0.8970
+INFO:root:08:20:39 [Epoch 1 Batch 2000/2111] loss=0.1765, lr=0.0000180, metrics:accuracy:0.9056
+INFO:root:08:21:05 Now we are doing evaluation on dev with gpu(0).
+INFO:root:08:21:11 validation metrics:accuracy:0.9312
+INFO:root:08:21:11 Time cost=5.73s, throughput=152.30 samples/s
+INFO:root:08:21:19 params saved in: ./output_dir/model_bert_SST_0.params
+INFO:root:08:21:19 Time cost=529.62s
+INFO:root:08:22:58 [Epoch 2 Batch 400/2111] loss=0.1112, lr=0.0000169, metrics:accuracy:0.9661
+INFO:root:08:24:37 [Epoch 2 Batch 800/2111] loss=0.1129, lr=0.0000161, metrics:accuracy:0.9659
+INFO:root:08:26:16 [Epoch 2 Batch 1200/2111] loss=0.1119, lr=0.0000152, metrics:accuracy:0.9657
+INFO:root:08:27:55 [Epoch 2 Batch 1600/2111] loss=0.1189, lr=0.0000144, metrics:accuracy:0.9648
+INFO:root:08:29:36 [Epoch 2 Batch 2000/2111] loss=0.1192, lr=0.0000135, metrics:accuracy:0.9643
+INFO:root:08:30:03 Now we are doing evaluation on dev with gpu(0).
+INFO:root:08:30:09 validation metrics:accuracy:0.9323
+INFO:root:08:30:09 Time cost=5.71s, throughput=152.62 samples/s
+INFO:root:08:30:15 params saved in: ./output_dir/model_bert_SST_1.params
+INFO:root:08:30:15 Time cost=536.35s
+INFO:root:08:31:52 [Epoch 3 Batch 400/2111] loss=0.0706, lr=0.0000125, metrics:accuracy:0.9790
+INFO:root:08:33:36 [Epoch 3 Batch 800/2111] loss=0.0691, lr=0.0000116, metrics:accuracy:0.9793
+INFO:root:08:35:21 [Epoch 3 Batch 1200/2111] loss=0.0688, lr=0.0000108, metrics:accuracy:0.9793
+INFO:root:08:36:57 [Epoch 3 Batch 1600/2111] loss=0.0701, lr=0.0000099, metrics:accuracy:0.9793
+INFO:root:08:38:34 [Epoch 3 Batch 2000/2111] loss=0.0802, lr=0.0000091, metrics:accuracy:0.9788
+INFO:root:08:39:05 Now we are doing evaluation on dev with gpu(0).
+INFO:root:08:39:10 validation metrics:accuracy:0.9300
+INFO:root:08:39:10 Time cost=5.81s, throughput=150.16 samples/s
+INFO:root:08:39:17 params saved in: ./output_dir/model_bert_SST_2.params
+INFO:root:08:39:17 Time cost=542.14s
+INFO:root:08:40:52 [Epoch 4 Batch 400/2111] loss=0.0412, lr=0.0000080, metrics:accuracy:0.9879
+INFO:root:08:42:36 [Epoch 4 Batch 800/2111] loss=0.0438, lr=0.0000072, metrics:accuracy:0.9875
+INFO:root:08:44:11 [Epoch 4 Batch 1200/2111] loss=0.0441, lr=0.0000063, metrics:accuracy:0.9871
+INFO:root:08:45:54 [Epoch 4 Batch 1600/2111] loss=0.0481, lr=0.0000055, metrics:accuracy:0.9870
+INFO:root:08:47:39 [Epoch 4 Batch 2000/2111] loss=0.0474, lr=0.0000046, metrics:accuracy:0.9866
+INFO:root:08:48:06 Now we are doing evaluation on dev with gpu(0).
+INFO:root:08:48:12 validation metrics:accuracy:0.9335
+INFO:root:08:48:12 Time cost=5.72s, throughput=152.58 samples/s
+INFO:root:08:48:19 params saved in: ./output_dir/model_bert_SST_3.params
+INFO:root:08:48:19 Time cost=541.73s
+INFO:root:08:49:55 [Epoch 5 Batch 400/2111] loss=0.0220, lr=0.0000035, metrics:accuracy:0.9926
+INFO:root:08:51:41 [Epoch 5 Batch 800/2111] loss=0.0251, lr=0.0000027, metrics:accuracy:0.9924
+INFO:root:08:53:21 [Epoch 5 Batch 1200/2111] loss=0.0267, lr=0.0000019, metrics:accuracy:0.9921
+INFO:root:08:54:59 [Epoch 5 Batch 1600/2111] loss=0.0235, lr=0.0000010, metrics:accuracy:0.9921
+INFO:root:08:56:44 [Epoch 5 Batch 2000/2111] loss=0.0239, lr=0.0000002, metrics:accuracy:0.9921
+INFO:root:08:57:02 Finish training step: 10523
+INFO:root:08:57:02 Now we are doing evaluation on dev with gpu(0).
+INFO:root:08:57:08 validation metrics:accuracy:0.9312
+INFO:root:08:57:08 Time cost=5.71s, throughput=152.60 samples/s
+INFO:root:08:57:14 params saved in: ./output_dir/model_bert_SST_4.params
+INFO:root:08:57:14 Time cost=535.46s
+INFO:root:08:57:50 Best model at epoch 3. Validation metrics:accuracy:0.9335
+INFO:root:08:57:50 Now we are doing testing on test with gpu(0).
+INFO:root:08:58:03 Time cost=12.18s, throughput=149.75 samples/s
+INFO:root:09:17:45 Namespace(accumulate=None, batch_size=32, bert_dataset='openwebtext_book_corpus_wiki_en_uncased', bert_model='bert_24_1024_16', calib_mode='customize', deploy=False, dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=0, log_interval=400, lr=2e-05, max_len=128, model_parameters=None, model_prefix=None, num_calib_batches=5, only_calibration=False, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, quantized_dtype='auto', round_to=None, seed=2, task_name='SST', training_steps=None, warmup_ratio=0.1)
